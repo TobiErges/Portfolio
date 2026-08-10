@@ -9,13 +9,13 @@
 
 window.SITE = {
   // --- Your name (big title at the top) ---
-  name: "Alex Rivera",
+  name: "Ogundepo TObi",
 
   // --- Small line above your name ---
   tagline: "The Portfolio Of",
 
   // --- Browser tab title ---
-  pageTitle: "Alex Rivera",
+  pageTitle: "Ogundepo Tobi",
 
   // --- Short description for Google / link previews ---
   pageDescription: "Product designer building clear, useful experiences.",
