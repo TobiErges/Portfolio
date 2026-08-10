@@ -73,7 +73,7 @@ window.SITE = {
   ],
 
   // --- About section ---
-  aboutTitle: "About Alex",
+  aboutTitle: "About Tobi",
   // Each item is one paragraph. You can use <a href="URL">link text</a> for links.
   about: [
     
