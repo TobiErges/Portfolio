@@ -9,7 +9,7 @@
 
 window.SITE = {
   // --- Your name (big title at the top) ---
-  name: "Ogundepo TObi",
+  name: "Ogundepo Tobi",
 
   // --- Small line above your name ---
   tagline: "The Portfolio Of",
@@ -18,18 +18,18 @@ window.SITE = {
   pageTitle: "Ogundepo Tobi",
 
   // --- Short description for Google / link previews ---
-  pageDescription: "Product designer building clear, useful experiences.",
+  pageDescription: "Protein engineering, Molecular biology",
 
   // --- Blue bar at the very top (set enabled to false to hide it) ---
   banner: {
     enabled: true,
     text: "Open to new opportunities — say hello.",
-    url: "mailto:alex@example.com",
+    url: "mailto:ogundepotobi@gmail.com",
   },
 
   // --- Links in the top-right corner ---
   nav: [
-    { label: "Email", url: "mailto:alex@example.com" },
+    { label: "Email", url: "mailto:ogundepotobi@gmail.com" },
     { label: "LinkedIn", url: "https://www.linkedin.com/" },
     { label: "X", url: "https://x.com/" },
   ],
@@ -39,26 +39,26 @@ window.SITE = {
   // Leave image as "" if you don't have one yet.
   projects: [
     {
-      title: "Product Redesign",
-      description: "Simplified onboarding for a B2B SaaS product.",
+      title: "Research",
+      description: "",
       url: "https://example.com",
       image: "",
     },
     {
-      title: "Brand System",
-      description: "Visual identity and guidelines for a startup.",
+      title: "Notes",
+      description: "",
       url: "https://example.com",
       image: "",
     },
     {
-      title: "Mobile App",
+      title: "Projects",
       description: "End-to-end UX for a consumer wellness app.",
       url: "https://example.com",
       image: "",
     },
     {
-      title: "Case Study",
-      description: "Research, prototypes, and launch outcomes.",
+      title: "Reading",
+      description: "",
       url: "https://example.com",
       image: "",
     },
