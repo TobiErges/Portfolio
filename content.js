@@ -52,7 +52,7 @@ window.SITE = {
     },
     {
       title: "Projects",
-      description: "End-to-end UX for a consumer wellness app.",
+      description: "",
       url: "https://example.com",
       image: "",
     },
@@ -76,14 +76,18 @@ window.SITE = {
   aboutTitle: "About Alex",
   // Each item is one paragraph. You can use <a href="URL">link text</a> for links.
   about: [
-    "I design products that feel simple on the surface and solid underneath. I care about clarity, craft, and making useful things for real people.",
-    'Previously I worked on product design at <a href="https://example.com" target="_blank" rel="noopener">Acme</a> and freelance projects for early-stage teams.',
-    "Things I enjoy include long walks, good typography, indie games, and strong coffee. Things I avoid include jargon, clutter, and meetings without agendas.",
+    
+    "**A personal space for research, projects, notes, and ideas.**  
+    
+    "I use this site to document my work in science, explore ideas beyond my immediate research, and share what I’m learning along the way."
+    "It brings together my research, ongoing projects, technical notes, reading, and reflections on science and problem-solving."
+    "A living record of what I’m working on, learning, and thinking about. "
+   
   ],
 
   // --- Contact line under About ---
   contact: {
     label: "Get in touch",
-    email: "alex@example.com",
+    email: "ogundepotobi@gmail.com",
   },
 };
