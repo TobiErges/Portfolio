@@ -205,6 +205,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: #f7fafc;
 }
 
 .project-card-placeholder {
@@ -327,6 +328,140 @@ img {
   color: var(--link-hover);
 }
 
+/* Project page */
+.header-compact .header-inner-compact {
+  padding-bottom: 28px;
+}
+
+.header-brand-compact {
+  padding-top: 4px;
+}
+
+.back-home {
+  display: inline-block;
+  color: var(--nav);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.back-home:hover {
+  color: var(--link-hover);
+}
+
+.header-name-link {
+  text-decoration: none;
+}
+
+.project-page {
+  max-width: 760px;
+  margin: 36px auto 0;
+  padding: 0 24px 40px;
+}
+
+.project-missing {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.project-kicker {
+  color: var(--navy-deep);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.05px;
+  margin: 0 0 8px;
+}
+
+.project-title {
+  color: var(--navy);
+  font-size: clamp(34px, 6vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.project-summary {
+  color: var(--ink-soft);
+  font-size: 21px;
+  line-height: 1.45;
+  margin: 0 0 28px;
+  max-width: 38rem;
+}
+
+.project-hero {
+  margin: 0 0 32px;
+  border: 1px solid var(--card-border);
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.project-hero img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-body {
+  font-size: 20px;
+  line-height: 1.55;
+  letter-spacing: -0.01px;
+  max-width: 38rem;
+}
+
+.project-body p {
+  margin: 0 0 16px;
+}
+
+.project-body a {
+  color: var(--link);
+  background: #00bfff05;
+}
+
+.project-body a:hover {
+  color: var(--link-hover);
+}
+
+.project-gallery {
+  display: grid;
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.project-gallery-item {
+  margin: 0;
+  border: 1px solid var(--card-border);
+  border-radius: 9px;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+
+.project-gallery-item img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-external {
+  margin-top: 36px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.project-external a {
+  color: var(--list-link);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.project-external a:hover {
+  background: #e9f2ff;
+  color: var(--link-hover);
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -417,6 +552,16 @@ img {
   .slanted-divider {
     margin-left: -8%;
     margin-right: -8%;
+  }
+
+  .project-page {
+    margin-top: 24px;
+    padding: 0 16px 32px;
+  }
+
+  .project-summary,
+  .project-body {
+    font-size: 18px;
   }
 }
 

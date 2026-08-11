@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Product Redesign">
+  <rect width="1200" height="750" fill="#f7fafc"/>
+  <rect x="80" y="90" width="1040" height="570" rx="28" fill="#ffffff" stroke="#d7e4ef" stroke-width="3"/>
+  <rect x="130" y="150" width="420" height="36" rx="10" fill="#d9ebf7"/>
+  <rect x="130" y="210" width="300" height="22" rx="8" fill="#e8f1f8"/>
+  <rect x="130" y="280" width="940" height="120" rx="16" fill="#edf6fb" stroke="#cfe0ec"/>
+  <rect x="130" y="440" width="280" height="120" rx="16" fill="#e7f6ea" stroke="#c5decc"/>
+  <rect x="440" y="440" width="280" height="120" rx="16" fill="#eef3f8" stroke="#d2dde7"/>
+  <rect x="750" y="440" width="320" height="120" rx="16" fill="#eef3f8" stroke="#d2dde7"/>
+  <circle cx="980" cy="180" r="48" fill="#6bb7df" opacity="0.9"/>
+</svg>

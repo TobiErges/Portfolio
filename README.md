@@ -19,9 +19,11 @@ npx --yes serve .
 
 | File | Who edits it |
 |------|----------------|
-| `content.js` | Site owner — name, bio, projects, links |
-| `images/` | Site owner — project photos |
-| `index.html`, `styles.css`, `script.js` | Developer only |
+| `content.js` | Site owner — name, bio, projects, project pages, links |
+| `images/` | Site owner — project photos (`.png`, `.jpg`, or `.svg`) |
+| `index.html`, `project.html`, `styles.css`, `script.js` | Developer only |
+
+Project cards open their own pages (`project.html?id=...`). All project text and images are controlled from `content.js`.
 
 ## Deploy on Vercel
 

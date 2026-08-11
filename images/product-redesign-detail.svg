@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Product Redesign detail">
+  <rect width="1200" height="750" fill="#f4f8fb"/>
+  <rect x="120" y="120" width="960" height="510" rx="24" fill="#fff" stroke="#d5e3ee"/>
+  <rect x="180" y="190" width="220" height="380" rx="18" fill="#edf5fa"/>
+  <rect x="440" y="190" width="560" height="70" rx="12" fill="#dcecf6"/>
+  <rect x="440" y="290" width="560" height="280" rx="16" fill="#f7fbfd" stroke="#d7e5ef"/>
+  <rect x="480" y="340" width="360" height="28" rx="8" fill="#cfe3f0"/>
+  <rect x="480" y="400" width="480" height="18" rx="7" fill="#e4eef5"/>
+  <rect x="480" y="440" width="420" height="18" rx="7" fill="#e4eef5"/>
+</svg>

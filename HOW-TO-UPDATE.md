@@ -1,31 +1,156 @@
-# How to update this website (no coding needed)
+# HOW TO UPDATE
 
-You only need to edit **one file**: `content.js`
+**You almost never need to touch code.**
 
-Everything else (`index.html`, `styles.css`, `script.js`) can stay untouched.
+Only use these two things:
+1. **`content.js`** — all text and links
+2. **`images` folder** — all pictures
+
+Do not edit `index.html`, `project.html`, `styles.css`, or `script.js`.
 
 ---
 
-## Before you start
+## Quick start
 
-1. Open the project folder on your computer.
-2. Open `content.js` in **Notepad** (Windows) or **TextEdit** (Mac).
-3. Change only the words **between the quote marks** `"like this"`.
+1. Open the website folder on your computer.
+2. Open `content.js` with **Notepad** (Windows) or **TextEdit** (Mac).
+3. Change text **only between the quote marks**: `"like this"`.
 4. Save the file.
-5. Double-click `index.html` to preview in your browser.
+5. Open `index.html` in your browser to check.
+6. Click a project card to check its project page.
 
 ---
 
-## Common updates
+## Part 1 — Change pictures
 
-### Change your name
-Find:
+### Replace a project picture
+1. Find the old file in the `images` folder  
+   (example: `product-redesign.svg`).
+2. Add your new picture to the `images` folder.
+3. Either:
+   - **Easiest:** keep the same filename as the old one, or
+   - Use a new filename, then update the matching path in `content.js`.
+
+Allowed file types: `.png`, `.jpg`, `.jpeg`, `.svg`, `.webp`
+
+### Tell the website which picture to use
+In `content.js`, paths look like this:
+
+```js
+image: "images/product-redesign.svg",
+```
+
+That means: “use the file named `product-redesign.svg` inside the `images` folder.”
+
+The spelling must match exactly, including the ending (`.png` / `.svg`).
+
+### Which image field does what?
+
+For each project:
+
+- `image` = picture on the **homepage card**
+- `gallery` = pictures on the **project page**
+
+Example:
+
+```js
+image: "images/product-redesign.svg",
+
+gallery: [
+  "images/product-redesign.svg",
+  "images/product-redesign-detail.svg",
+],
+```
+
+- To add a gallery image: copy one line, paste it, change the filename.
+- To remove a gallery image: delete that whole line.
+
+---
+
+## Part 2 — Update a project (card + its page)
+
+Each project lives in one block inside `projects: [ ... ]`.
+
+### What each field means
+
+| Field | What you change |
+|--------|------------------|
+| `id` | The project page address. **No spaces.** Example: `product-redesign` |
+| `title` | Project name on the card and page |
+| `description` | Short line under the card title |
+| `image` | Card picture |
+| `summary` | Short intro at the top of the project page |
+| `body` | Main paragraphs on the project page |
+| `gallery` | Extra pictures on the project page |
+| `externalLink` | Optional “View live project” button |
+
+### Change the project page story
+Edit text inside `body`:
+
+```js
+body: [
+  "Write the first paragraph here.",
+  "Write the second paragraph here.",
+  "Write the third paragraph here.",
+],
+```
+
+Add another paragraph by copying a line.  
+Remove a paragraph by deleting a line.
+
+### Open a project page
+Homepage cards open pages like:
+
+`project.html?id=product-redesign`
+
+The part after `id=` must match the project’s `id`.
+
+### Add a brand-new project
+1. Copy one full project block, from `{` to `},`
+2. Paste it under the other projects
+3. Change:
+   - `id` (new, no spaces)
+   - `title`
+   - `description`
+   - `summary`
+   - `body` paragraphs
+   - `image` and `gallery` paths
+4. Save and preview
+
+### Optional live-project button
+Hide it (recommended until you have a link):
+
+```js
+externalLink: {
+  label: "View live project",
+  url: "",
+},
+```
+
+Show it:
+
+```js
+externalLink: {
+  label: "View live project",
+  url: "https://your-website.com",
+},
+```
+
+---
+
+## Part 3 — Update the homepage
+
+### Your name
 ```js
 name: "Alex Rivera",
 ```
-Change to your name. Keep the quotes and the comma.
 
-### Change the top blue banner
+### Line above your name
+```js
+tagline: "The Portfolio Of",
+```
+
+### Top blue banner
 ```js
 banner: {
   enabled: true,
@@ -33,71 +158,66 @@ banner: {
   url: "mailto:alex@example.com",
 },
 ```
-- Set `enabled: false` to hide the banner.
-- Change `text` for the message.
-- Change `url` to your email (`mailto:you@email.com`) or a webpage.
 
-### Change top-right links (Email, LinkedIn, X)
-Inside `nav: [ ... ]`, edit the `label` and `url` for each item.
-To remove a link, delete its whole `{ ... },` block.
-To add a link, copy an existing block and paste it.
+- Hide banner: set `enabled: false`
+- Change the words in `text`
+- Change where it goes in `url`
 
-### Update featured project cards
-Inside `projects: [ ... ]`:
-- `title` = card heading
-- `description` = short sentence under the title
-- `url` = where the card goes when clicked
-- `image` = optional picture path, example: `"images/project1.png"`
+### Top-right links (Email, LinkedIn, X)
+Edit items inside `nav: [ ... ]`.
 
-If you leave `image: ""`, a soft placeholder shows instead.
+### “Selected Work” links
+Edit items inside `links: [ ... ]`.
 
-**To add a photo:**
-1. Put the image file in the `images` folder.
-2. Set `image: "images/your-filename.png"`
+To link to a project page:
 
-### Update the list of links
-Inside `links: [ ... ]`, change `label` and `url`.
-
-### Update the About section
-Inside `about: [ ... ]`, each quoted paragraph is one block of text.
-
-To add a clickable link inside a paragraph:
 ```js
-'I worked at <a href="https://example.com" target="_blank" rel="noopener">Acme</a>.'
+{ label: "Product Redesign", url: "project.html?id=product-redesign" },
 ```
 
-### Change contact email
+### About section
+Edit paragraphs inside `about: [ ... ]`.
+
+### Contact email
 ```js
 contact: {
   label: "Get in touch",
-  email: "alex@example.com",
+  email: "you@email.com",
 },
 ```
 
 ---
 
-## Important rules (so the site doesn’t break)
+## Rules (read these)
 
-1. Keep the quote marks `" "` around text.
-2. Keep commas `,` after each item.
-3. Don’t delete `{ }` or `[ ]`.
-4. If you paste from Word/Google Docs, watch for fancy quotes like `“ ”` — replace them with straight quotes `"`.
-5. After saving, refresh the browser (or reopen `index.html`).
-
----
-
-## If something looks broken
-
-1. Undo your last edit (Ctrl+Z / Cmd+Z) and save again.
-2. Check that every changed line still has quotes and a comma at the end.
-3. Ask a friend to compare your file with a backup copy.
+1. Only change text **inside** quote marks `" "`.
+2. Keep commas `,` at the ends of lines.
+3. Do not delete `{ }` or `[ ]`.
+4. Never put spaces in an `id` (use `my-project`, not `my project`).
+5. Image paths must match real filenames in `images`.
+6. Do not use fancy Word quotes like `“ ”`. Use straight quotes `"`.
+7. Save → refresh the browser → check.
 
 ---
 
-## Publishing the site online
+## If something breaks
 
-Ask whoever set this up for you. Common free options:
-- [Netlify Drop](https://app.netlify.com/drop) — drag the whole folder onto the page
-- GitHub Pages — if the project is already on GitHub
+1. Press **Ctrl+Z** (Windows) or **Cmd+Z** (Mac) to undo.
+2. Save again and refresh.
+3. Check for missing quotes or commas.
+4. Check image filenames carefully.
+5. Compare with a backup copy if needed.
 
-After publishing, future updates usually mean: edit `content.js`, then upload/replace that file (or push to GitHub).
+---
+
+## Put updates online (Vercel)
+
+If this site is connected to GitHub + Vercel:
+
+1. Change `content.js` and/or files in `images`
+2. Commit and push the changes
+3. Wait 1–2 minutes — Vercel updates the live site
+
+If someone else handles publishing for you, send them:
+- the updated `content.js`
+- any new/changed files from the `images` folder

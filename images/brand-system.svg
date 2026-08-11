@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Brand System">
+  <rect width="1200" height="750" fill="#f8faf8"/>
+  <rect x="90" y="100" width="460" height="550" rx="28" fill="#1f3b52"/>
+  <circle cx="320" cy="290" r="90" fill="#6cc2b1"/>
+  <rect x="210" y="430" width="220" height="28" rx="10" fill="#d7ebe6"/>
+  <rect x="240" y="480" width="160" height="18" rx="8" fill="#9bb8c7"/>
+  <rect x="600" y="140" width="470" height="140" rx="20" fill="#ffffff" stroke="#d9e3ea"/>
+  <rect x="600" y="310" width="220" height="140" rx="20" fill="#edf4fc"/>
+  <rect x="850" y="310" width="220" height="140" rx="20" fill="#f3ffe4"/>
+  <rect x="600" y="480" width="470" height="140" rx="20" fill="#ffffff" stroke="#d9e3ea"/>
+</svg>

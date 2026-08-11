@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="project">
+    <div id="banner"></div>
+
+    <header class="header header-compact">
+      <div class="header-inner header-inner-compact">
+        <nav id="nav" class="header-links" aria-label="Site links"></nav>
+        <div class="header-brand header-brand-compact">
+          <a href="index.html" class="back-home">← Home</a>
+          <div id="tagline" class="header-pre"></div>
+          <a href="index.html" id="name" class="header-name header-name-link"></a>
+        </div>
+      </div>
+      <div class="slanted-divider" aria-hidden="true"></div>
+    </header>
+
+    <main class="project-page">
+      <p id="project-missing" class="project-missing" hidden>
+        Project not found.
+        <a href="index.html">Back to home</a>
+      </p>
+
+      <article id="project-article" hidden>
+        <p id="project-kicker" class="project-kicker"></p>
+        <h1 id="project-title" class="project-title"></h1>
+        <p id="project-summary" class="project-summary"></p>
+
+        <figure id="project-hero" class="project-hero" hidden>
+          <img id="project-hero-img" alt="" />
+        </figure>
+
+        <div id="project-body" class="project-body"></div>
+
+        <div id="project-gallery" class="project-gallery"></div>
+
+        <p id="project-external" class="project-external" hidden></p>
+      </article>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

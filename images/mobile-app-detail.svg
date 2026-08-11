@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Mobile App detail">
+  <rect width="1200" height="750" fill="#f3f7fa"/>
+  <rect x="180" y="90" width="280" height="570" rx="40" fill="#243642"/>
+  <rect x="205" y="135" width="230" height="470" rx="24" fill="#f8fbfd"/>
+  <rect x="460" y="90" width="280" height="570" rx="40" fill="#243642"/>
+  <rect x="485" y="135" width="230" height="470" rx="24" fill="#eef7f1"/>
+  <rect x="740" y="90" width="280" height="570" rx="40" fill="#243642"/>
+  <rect x="765" y="135" width="230" height="470" rx="24" fill="#edf4fc"/>
+</svg>
